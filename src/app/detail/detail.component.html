@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <nav>
+      <button *ngFor = 'let song of songs; let x = index' id ="input{{x}}"
+                      (click) = "changePara(x)"> {{song}}</button>
+    </nav>
+  </header>
+<div class = 'gridArea'>
+<ul class = 'imgArea' >
+  <li> <img src ="assets/img/september.jpeg" width = '300px'></li>
+</ul>
+<ul class = 'listArea common'>
+  <li>Song Title: {{detail.sname}}</li>
+  <li>Artist: {{detail.sartist}}</li>
+  <li>Genre: {{detail.sgenre}}</li>
+  <li>Year: {{detail.year}}</li>
+</ul>
+</div>
+</html>
